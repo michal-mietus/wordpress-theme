@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta charset='UTF-8'>
+    <meta charset="<?php bloginfo('charset'); ?>"/>
+    <title><?php wp_title(); ?></title>
   </head>
   <body>
-  im a header
