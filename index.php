@@ -1,5 +1,4 @@
 <?php 
-
-  wp_header();
-  wp_footer();
+  get_header();
+  get_footer();
 ?>
