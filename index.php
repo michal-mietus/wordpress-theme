@@ -1,4 +1,5 @@
 <?php 
-  echo 'Hello world';
-  echo 'Its meme time.';
+
+  wp_header();
+  wp_footer();
 ?>
