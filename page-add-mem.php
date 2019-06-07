@@ -5,7 +5,20 @@
   $image = $_POST['image'];
   $video = $_POST['video'];
 
-  echo $title . ' ' . $description . ' ' . $image;
+
+  $new_post = array(
+    'post_title' => $title,
+    'post_content' => $description,
+    'post_status' => 'awaiting',
+    'post_date' => date('Y-m-d H:i:s'),
+    'post_author' => $user_ID, /* What if user isnt logged */
+    'post_type' => 'post', /* ? */
+    'post_category' => array(3) /* Categories should be select field */
+  );
+
+  $post_id = wp_insert_post($new_post);
+
+  // Add image to post 
 
 ?>
 
