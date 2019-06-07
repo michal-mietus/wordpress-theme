@@ -5,5 +5,18 @@
   </head>
   <body>
     <nav>
-      <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+      <ul>
+        <li><a href="<?php echo home_url(); ?>">Home</a></li>
+        <?php
+          $menuParameters = array(
+            'theme_location' => 'header-menu',
+            'container'       => false,
+            'echo'            => false,
+            'items_wrap'      => '%3$s',
+            'depth'           => 0,
+          );
+          $menu = wp_nav_menu($menuParameters);
+          echo $menu;
+        ?>
+      </ul>
     </nav>
