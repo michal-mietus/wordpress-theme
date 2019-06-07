@@ -1,3 +1,14 @@
+<?php
+
+  $title = $_POST['title'];
+  $description = $_POST['description'];
+  $image = $_POST['image'];
+  $video = $_POST['video'];
+
+  echo $title . ' ' . $description . ' ' . $image;
+
+?>
+
 <?php get_header(); ?>
 
 <?php get_template_part('information', 'special') ?>
