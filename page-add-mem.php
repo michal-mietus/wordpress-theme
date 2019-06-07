@@ -32,13 +32,14 @@
       <textarea type="text" name="description"><?php echo esc_textarea($_POST['description']); ?></textarea>
     </label>
     <label for="image">
-      <input type="file" name="image" accept="image/*">
+      <input type="file" name="image" accept="image/* video/*">
     </label>
+<!--
     <label for="video">
       <input type="file" name="video" accept="video/*">
     </label>
-    
-    <input type="submit">
+    -->
+    <input type="submit" value="Add">
   </form>
 </div>
 
