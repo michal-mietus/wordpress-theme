@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('information') ?>
+<?php get_template_part('information', 'special') ?>
 
 <?php 
 if ( have_posts() ) {
