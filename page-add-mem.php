@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part('information') ?>
+
 <style type="text/css">
   .error{
     padding: 5px 9px;
